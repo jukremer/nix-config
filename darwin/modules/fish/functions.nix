@@ -1,5 +1,5 @@
 {
-  lk = "set loc (walk $argv); and cd $loc;";
+  lk = "set loc (walk --icons $argv); and cd $loc;";
 
   mol = ''
     set -l smiles $(curl -s "https://cactus.nci.nih.gov/chemical/structure/$argv/smiles")

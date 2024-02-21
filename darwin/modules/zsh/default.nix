@@ -9,6 +9,7 @@
     enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
     initExtra = ''
+      function lk { cd "$(walk --icons "$@")" }
       source ${config.xdg.configHome}/zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
       source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
     '';
