@@ -19,11 +19,6 @@
       enable = true;
     };
 
-    gitui = {
-      enable = true;
-      theme = import ./gitui/theme.nix;
-    };
-
     lazygit = {
       enable = true;
     };
