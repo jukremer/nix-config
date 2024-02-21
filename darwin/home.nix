@@ -36,7 +36,7 @@
     btop = {
       enable = true;
       settings = {
-        color_theme = "~/.config/btop/themes/catppuccin_macchiato.theme";
+        color_theme = "catppuccin_macchiato";
         theme_background = false;
       };
     };
