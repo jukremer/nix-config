@@ -102,9 +102,9 @@ nix flake update --commit-lock-file ~/.config/nix/darwin/
 
 ### Programs
 
-- [x] Alacritty
 - [ ] Nushell
-- [ ] Fish functions
+- [x] Alacritty
+- [x] Fish functions
 - [x] Add kitty
     - [x] Configure in home manager
 - [x] Zellij
