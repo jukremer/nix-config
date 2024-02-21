@@ -12,6 +12,7 @@
       };
       extensions.file_browser = {
         enable = true;
+        hijackNetrw = true;
       };
 
       keymaps = {

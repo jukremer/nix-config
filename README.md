@@ -118,6 +118,7 @@ nix flake update --commit-lock-file ~/.config/nix/darwin/
 
 #### Neovim
 
+- [ ] Cleanup completion
 - [x] Set `conceallevel` to 1 or 2
 - [x] Setup vim-sleuth for tabstops
 - [x] Setup formatter
