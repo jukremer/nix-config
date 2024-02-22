@@ -38,6 +38,11 @@
           yamlls.enable = true;
         };
       };
+      which-key.registrations = {
+        "<leader>p" = "Go to previous diagnostic";
+        "<leader>j" = "Go to next diagnostic";
+        "<leader>r" = "Rename";
+      };
     };
   };
 }
