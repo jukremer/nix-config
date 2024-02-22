@@ -42,5 +42,16 @@
         command = "undojoin | Neoformat";
       }
     ];
+
+    keymaps = [
+      {
+        key = "<leader>=";
+        action = "undojoin | Neoformat";
+        options = {
+          desc = "Format document";
+          silent = true;
+        };
+      }
+    ];
   };
 }
