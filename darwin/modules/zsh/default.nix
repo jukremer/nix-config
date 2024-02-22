@@ -5,12 +5,24 @@
     enable = true;
     dotDir = ".config/zsh";
     defaultKeymap = "viins";
-    autocd = true;
     enableAutosuggestions = true;
-    syntaxHighlighting.enable = true;
+    autocd = true;
+    dirHashes = {
+      docs = "$HOME/Documents";
+      vids = "$HOME/Videos";
+      dl = "$HOME/Downloads";
+    };
+    syntaxHighlighting = {
+      enable = true;
+      highlighters = [
+        "main"
+        "cursor"
+        "brackets"
+      ];
+      styles = import ./syntax-highlight.nix;
+    };
     initExtra = ''
       function lk { cd "$(walk --icons "$@")" }
-      source ${config.xdg.configHome}/zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
       source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
     '';
     envExtra = import ./env.nix;
