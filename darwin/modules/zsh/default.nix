@@ -4,7 +4,7 @@
   programs.zsh = {
     enable = true;
     dotDir = ".config/zsh";
-    defaultKeymap = "viins";
+    # defaultKeymap = "viins";
     enableAutosuggestions = true;
     autocd = true;
     dirHashes = {
