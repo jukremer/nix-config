@@ -6,11 +6,9 @@
     ./harpoon.nix
     ./lsp.nix
     ./lualine.nix
-    ./obsidian.nix
     ./telescope.nix
     ./treesitter.nix
     ./typst.nix
-    ./which-key.nix
   ];
 
   programs.nixvim = {
@@ -40,17 +38,6 @@
         desc = "Format on save";
         event = "BufWritePre";
         command = "undojoin | Neoformat";
-      }
-    ];
-
-    keymaps = [
-      {
-        key = "<leader>=";
-        action = "undojoin | Neoformat";
-        options = {
-          desc = "Format document";
-          silent = true;
-        };
       }
     ];
   };
