@@ -22,11 +22,11 @@
         };
       };
     };
-    plugins.which-key.registrations = {
-      "<leader>a" = "Add file to Harpoon";
-      "<leader>0" = "Open Harpoon menu";
-      "<leader>*" = "Go to next Harpoon file";
-      "<leader>#" = "Go to previous Harpoon file";
-    };
+    # plugins.which-key.registrations = {
+    #   "<leader>a" = "Add file to Harpoon";
+    #   "<leader>0" = "Open Harpoon menu";
+    #   "<leader>*" = "Go to next Harpoon file";
+    #   "<leader>#" = "Go to previous Harpoon file";
+    # };
   };
 }
