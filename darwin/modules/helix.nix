@@ -7,10 +7,8 @@
     extraPackages = [
       pkgs.marksman
       pkgs.nodePackages.prettier
-      pkgs.taplo
       pkgs.typst-lsp
       pkgs.typstfmt
-      pkgs.yaml-language-server
     ];
 
     settings = {
