@@ -5,8 +5,6 @@
     "backupmusic" = "rsync -a ~/Music/ /Volumes/Jans Übergangslösung/Musik";
     "capscreen" = "ffmpeg -f avfoundation -i '1:1'";
     "cat" = "bat";
-    "find" = "fd";
-    "grep" = "rg";
     "lg" = "lazygit";
     "mv" = "mv -i";
     "rm" = "trash";
