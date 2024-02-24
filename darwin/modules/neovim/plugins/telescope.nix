@@ -36,6 +36,10 @@
           action = "diagnostics";
           desc = "Open diagnostic picker";
         };
+        "<leader>'" = {
+          action = "resume";
+          desc = "Open last picker";
+        };
       };
     };
     keymaps = [
