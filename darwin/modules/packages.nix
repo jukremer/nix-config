@@ -1,27 +1,28 @@
 pkgs: with pkgs; [
   # Tools
-  vivid
-  fd
   curl
   darwin.trash
   datasette
   entr
   exiftool
+  fd
   ffmpeg
   fx
-  gopass
-  wget
-  yj
   git-ftp
+  gopass
   mysql
   sqlite
+  vivid
   walk
+  wget
+  yj
 
   # Work
   ditaa
+  gnuplot
+  hledger
   openbabel
   plantuml
-  gnuplot
   typst
   visidata
 

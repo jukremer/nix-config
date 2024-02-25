@@ -57,7 +57,11 @@
       }
       source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
     '';
-    envExtra = import ./env.nix;
+    envExtra = ''
+      export LEDGER_FILE="${config.xdg.dataHome}/hledger.journal"
+      export CLICOLOR=1
+      export LS_COLORS="$(vivid generate catppuccin-macchiato)"
+    '';
     history = {
       path = "${config.xdg.stateHome}/zsh/zsh_history";
       extended = true;
