@@ -9,6 +9,8 @@
           diagnostic = {
             "<leader>k" = "goto_prev";
             "<leader>j" = "goto_next";
+            "<leader>e" = "open_float";
+            "<leader>q" = "setloclist";
           };
 
           lspBuf = {
@@ -38,11 +40,6 @@
           yamlls.enable = true;
         };
       };
-      # which-key.registrations = {
-      #   "<leader>p" = "Go to previous diagnostic";
-      #   "<leader>j" = "Go to next diagnostic";
-      #   "<leader>r" = "Rename";
-      # };
     };
   };
 }

@@ -7,15 +7,10 @@
 
     keymaps = [
 
-      {
-        key = "<Space>";
-        action = "<NOP>";
-        mode = "n";
-      }
-
+      # Reset search highlight with <esc>
       {
         key = "<esc>";
-        action = ":noh<CR>";
+        action = "<cmd>nohlsearch<CR>";
         mode = "n";
         options = {
           desc = "Escape to reset highlight";
@@ -23,81 +18,78 @@
         };
       }
 
+      # Better split navigation
       {
-        key = "Y";
-        action = "y$";
+        key = "<C-h>";
+        action = "<C-w><C-h>";
         mode = "n";
         options = {
-          desc = "Fix Y behavior";
+          desc = "Move focus to the left window";
           silent = true;
         };
       }
-
       {
-        key = "<leader>s";
-        action = ":w<CR>";
+        key = "<C-l>";
+        action = "<C-w><C-l>";
         mode = "n";
         options = {
-          desc = "Save file";
+          desc = "Move focus to the right window";
+          silent = true;
         };
       }
-
       {
-        key = ">";
-        action = ">gv";
-        mode = "v";
+        key = "<C-j>";
+        action = "<C-w><C-j>";
+        mode = "n";
         options = {
-          desc = "Better indenting";
+          desc = "Move focus to the lower window";
+          silent = true;
+        };
+      }
+      {
+        key = "<C-k>";
+        action = "<C-w><C-k>";
+        mode = "n";
+        options = {
+          desc = "Move focus to the upper window";
           silent = true;
         };
       }
 
+      # Disable arrow keys
       {
-        key = "<";
-        action = "<gv";
-        mode = "v";
+        key = "<left>";
+        action = "<cmd>echo 'Use h to move!'<CR>";
+        mode = "n";
         options = {
-          desc = "Better indenting";
+          desc = "Use h to move!";
           silent = true;
         };
       }
-
       {
-        key = "<TAB>";
-        action = ">gv";
-        mode = "v";
+        key = "<right>";
+        action = "<cmd>echo 'Use l to move!'<CR>";
+        mode = "n";
         options = {
-          desc = "Better indenting";
+          desc = "Use l to move!";
           silent = true;
         };
       }
-
       {
-        key = "<S-TAB>";
-        action = "<gv";
-        mode = "v";
+        key = "<up>";
+        action = "<cmd>echo 'Use k to move!'<CR>";
+        mode = "n";
         options = {
-          desc = "Better indenting";
+          desc = "Use k to move!";
           silent = true;
         };
       }
-
       {
-        key = "K";
-        action = ":m '<-2<CR>gv=gv";
-        mode = "v";
+        key = "<down>";
+        action = "<cmd>echo 'Use j to move!'<CR>";
+        mode = "n";
         options = {
-          desc = "Move visual selection up";
-          silent = true;
-        };
-      }
-
-      {
-        key = "J";
-        action = ":m '>+1<CR>gv=gv";
-        mode = "v";
-        options = {
-          desc = "Move visual selection down";
+          desc = "Use j to move!";
           silent = true;
         };
       }
