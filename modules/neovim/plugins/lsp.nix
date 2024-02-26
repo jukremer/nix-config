@@ -7,17 +7,41 @@
         keymaps = {
           silent = true;
           diagnostic = {
-            "<leader>k" = "goto_prev";
-            "<leader>j" = "goto_next";
-            "<leader>e" = "open_float";
-            "<leader>q" = "setloclist";
+            "<leader>j" = {
+              action = "goto_next";
+              desc = "Goto next diagnostic";
+            };
+            "<leader>k" = {
+              action = "goto_prev";
+              desc = "Goto previous diagnostic";
+            };
+            "<leader>e" = {
+              action = "open_float";
+              desc = "Open float diagnostic";
+            };
+            "<leader>q" = {
+              action = "setloclist";
+              desc = "Open quickfix list";
+            };
           };
 
           lspBuf = {
-            "<leader>r" = "rename";
-            "<leader>a" = "code_action";
-            K = "hover";
-            "gD" = "declaration";
+            "<leader>r" = {
+              action = "rename";
+              desc = "Rename symbol";
+            };
+            "<leader>a" = {
+              action = "code_action";
+              desc = "Perform code action";
+            };
+            K = {
+              action = "hover";
+              desc = "Hover";
+            };
+            "gD" = {
+              action = "declaration";
+              desc = "Goto declaration";
+            };
           };
         };
 
