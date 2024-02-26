@@ -2,17 +2,23 @@
   programs.nixvim = {
     plugins.telescope = {
       enable = true;
-      extensions.fzf-native = {
-        enable = true;
-        caseMode = "smart_case";
-        fuzzy = true;
-      };
-      extensions.undo = {
-        enable = true;
-      };
-      extensions.file_browser = {
-        enable = true;
-        hijackNetrw = true;
+
+      extensions = {
+        fzf-native = {
+          enable = true;
+          caseMode = "smart_case";
+          fuzzy = true;
+        };
+        undo = {
+          enable = true;
+        };
+        file_browser = {
+          enable = true;
+          hijackNetrw = true;
+        };
+        ui-select = {
+          enable = true;
+        };
       };
 
       keymaps = {
@@ -30,7 +36,7 @@
         };
         "<leader>h" = {
           action = "help_tags";
-          desc = "Help";
+          desc = "Search help";
         };
         "<leader>d" = {
           action = "diagnostics";
@@ -40,10 +46,40 @@
           action = "resume";
           desc = "Open last picker";
         };
+        "<leader>?" = {
+          action = "keymaps";
+          desc = "Open command palette";
+        };
+
+        # Additions LSP mappings
+        "gd" = {
+          action = "lsp_definitions";
+          desc = "Goto definitions";
+        };
+        "gt" = {
+          action = "lsp_type_definitions";
+          desc = "Goto definitions";
+        };
+        "gr" = {
+          action = "lsp_references";
+          desc = "Goto references";
+        };
+        "gi" = {
+          action = "lsp_implementations";
+          desc = "Goto implementations";
+        };
+        "<leader>s" = {
+          action = "lsp_document_symbols";
+          desc = "Open symbol picker";
+        };
+        "<leader>S" = {
+          action = "lsp_dynamic_workspace_symbols";
+          desc = "Open workspace symbol picker";
+        };
       };
     };
-    keymaps = [
 
+    keymaps = [
       {
         key = "<leader>.";
         action = ":Telescope file_browser<CR>";

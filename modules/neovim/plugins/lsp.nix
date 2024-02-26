@@ -14,12 +14,10 @@
           };
 
           lspBuf = {
-            gd = "definition";
-            gD = "references";
-            gt = "type_definition";
-            gi = "implementation";
-            K = "hover";
             "<leader>r" = "rename";
+            "<leader>a" = "code_action";
+            K = "hover";
+            "gD" = "declaration";
           };
         };
 
@@ -40,6 +38,8 @@
           yamlls.enable = true;
         };
       };
+
+      fidget.enable = true;
     };
   };
 }
