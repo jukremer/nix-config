@@ -3,41 +3,52 @@
     globals = { };
 
     clipboard = {
-      # Use system clipboard
       register = "unnamedplus";
     };
 
     options = {
-      updatetime = 250;
-      timeoutlen = 300;
-
-      relativenumber = true;
       number = true;
-      scrolloff = 4;
-      conceallevel = 1;
+      relativenumber = true;
+
+      mouse = "a";
+
       showmode = false;
-
-      mouse = "nv";
-
-      hlsearch = true;
-
-      # incsearch = true;
-      # inccommand = "split";
-      ignorecase = true;
-      smartcase = true;
-      splitright = true;
-      splitbelow = true;
-
-      signcolumn = "yes";
-      colorcolumn = "80";
-      termguicolors = true;
-      linebreak = true;
 
       breakindent = true;
 
       undofile = true;
 
-      # exrc = true;
+      signcolumn = "yes";
+      colorcolumn = "80";
+
+      updatetime = 250;
+      timeoutlen = 300;
+
+      splitright = true;
+      splitbelow = true;
+
+      list = true;
+      listchars = {
+        tab = "» ";
+        trail = "·";
+        nbsp = "␣";
+      };
+
+      inccommand = "split";
+
+      cursorline = true;
+
+      scrolloff = 5;
+
+      hlsearch = true;
+      incsearch = true;
+      ignorecase = true;
+      smartcase = true;
+
+      termguicolors = true;
+
+      linebreak = true;
+      conceallevel = 1;
     };
   };
 }
