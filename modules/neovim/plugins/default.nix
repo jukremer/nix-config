@@ -29,19 +29,20 @@
         enable = true;
         userDefaultOptions.names = false;
       };
+
+      conform-nvim = {
+        enable = true;
+        formatOnSave = {
+          lspFallback = true;
+          timeoutMs = 500;
+        };
+        formattersByFt = {
+          nix = [ "nixfmt" ];
+          "_" = [ "trim_whitespace" ];
+        };
+      };
     };
 
-    extraPlugins = with pkgs.vimPlugins; [
-      vim-sleuth
-      neoformat
-    ];
-
-    autoCmd = [
-      {
-        desc = "Format on save";
-        event = "BufWritePre";
-        command = "undojoin | Neoformat";
-      }
-    ];
+    extraPlugins = with pkgs.vimPlugins; [ vim-sleuth ];
   };
 }
