@@ -1,0 +1,20 @@
+{
+  homebrew.casks = [
+    "electrum"
+    "element"
+    "ghostty"
+    "iina"
+    "keepassxc"
+    "libreoffice"
+    "minecraft"
+    "modrinth"
+    "monero-wallet"
+    "netnewswire"
+    "nextcloud"
+    "obsidian"
+    "qlmarkdown"
+    "signal"
+    "syntax-highlight"
+    "whisky"
+  ];
+}
