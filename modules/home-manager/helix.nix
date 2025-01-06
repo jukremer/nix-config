@@ -17,6 +17,9 @@
         color-modes = true;
         mouse = true;
 
+        end-of-line-diagnostics = "hint";
+        inline-diagnostics.cursor-line = "warning";
+
         cursor-shape = {
           insert = "bar";
           normal = "block";
