@@ -2,7 +2,6 @@
   homebrew.casks = [
     "electrum"
     "element"
-    "ghostty"
     "iina"
     "keepassxc"
     "libreoffice"

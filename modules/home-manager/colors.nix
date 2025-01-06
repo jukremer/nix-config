@@ -2,8 +2,6 @@
 {
   # Rosé Pine Moon (https://rosepinetheme.com)
   programs = {
-    helix.settings.theme = "rose_pine";
-
     bat = {
       config.theme = "rose-pine";
       themes.rose-pine = {
@@ -33,15 +31,9 @@
       "marker" = "#eb6f92";
       "prompt" = "#908caa";
     };
-  };
 
-  xdg.configFile."ghostty/config" = {
-    enable = true;
-    text = # toml
-      ''
-        theme = rose-pine
-        selection-background = 26233a
-      '';
-  };
+    ghostty.settings.theme = "rose-pine";
 
+    helix.settings.theme = "rose_pine";
+  };
 }

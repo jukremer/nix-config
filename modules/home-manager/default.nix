@@ -2,8 +2,8 @@
 {
   imports = [
     ./colors.nix
+    ./ghostty.nix
     ./git
-    ./gui
     ./helix.nix
     ./packages.nix
     ./shell
