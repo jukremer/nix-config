@@ -9,7 +9,7 @@
     ./mealie.nix
     ./minecraft.nix
     ./navidrome.nix
-    ./nextcloud.nix
+    # ./nextcloud.nix
     # ./pinchflat.nix
     ./samba.nix
     ./tailscale.nix
