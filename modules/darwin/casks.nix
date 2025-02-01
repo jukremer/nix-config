@@ -5,7 +5,6 @@
     "ghostty"
     "iina"
     "keepassxc"
-    "libreoffice"
     "minecraft"
     "modrinth"
     "monero-wallet"
