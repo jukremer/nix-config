@@ -9,5 +9,6 @@
     "font-chomsky"
     "font-cormorant-garamond"
     "font-crimson-text"
+    "font-unifrakturmaguntia"
   ];
 }
