@@ -92,7 +92,7 @@
         ShowPathbar = true;
         _FXShowPosixPathInTitle = true;
       };
-      screencapture.location = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/img";
+      # screencapture.location = "~/Pictures/Bildschirmfotos";
     };
     keyboard = {
       enableKeyMapping = true;
