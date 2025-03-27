@@ -1,8 +1,7 @@
-{ pkgs, ... }:
 {
   programs.ghostty = {
     enable = true;
-    package = pkgs.writeShellScriptBin "ghostty-mock" "true"; # Installed using Homebrew
+    package = null;
     enableZshIntegration = true;
     settings = {
       font-size = 16;

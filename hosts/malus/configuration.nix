@@ -13,9 +13,8 @@
   };
   networking.hostName = "malus";
 
-  services.nix-daemon.enable = true;
-
   nix = {
+    enable = false;
     ## Recommended for nixd
     nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
     settings = {
@@ -29,7 +28,7 @@
         "@admin"
       ];
     };
-    gc.automatic = true;
+    # gc.automatic = true;
   };
 
   nixpkgs = {
@@ -60,7 +59,7 @@
     fish.enable = true;
   };
 
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
 
   system = {
     defaults = {
