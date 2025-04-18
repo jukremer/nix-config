@@ -1,5 +1,6 @@
 {
   homebrew.casks = [
+    "chatgpt"
     "electrum"
     "element"
     "ghostty"
@@ -14,6 +15,8 @@
     "qlmarkdown"
     "signal"
     "syntax-highlight"
+    "visual-studio-code"
     "whisky"
+    "zotero"
   ];
 }
