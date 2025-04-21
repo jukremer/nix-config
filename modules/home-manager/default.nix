@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   imports = [
     ./colors.nix
@@ -20,14 +25,14 @@
     sessionVariables = {
       DIRENV_LOG_FORMAT = "";
       LEDGER_FILE = "${config.xdg.dataHome}/ledger/2024.journal";
-      PASSAGE_DIR = "${config.xdg.dataHome}/passage/store";
-      PASSAGE_IDENTITIES_FILE = "${config.xdg.dataHome}/passage/identities";
     };
 
     shellAliases = {
       "yt" = "yt-dlp";
       "yta" = "yt-dlp -x";
     };
+
+    packages = [ inputs.agenix.packages.${pkgs.system}.default ];
   };
 
   xdg = {
@@ -35,15 +40,6 @@
     userDirs = {
       videos = "${config.home.homeDirectory}/Movies/Videos";
     };
-  };
-
-  xdg.configFile."gopass/config" = {
-    enable = true;
-    text = # toml
-      ''
-        [mounts]
-        path = ~/.local/share/pass
-      '';
   };
 
   programs = {
@@ -59,21 +55,6 @@
     };
 
     pandoc.enable = true;
-
-    password-store = {
-      enable = true;
-      package = pkgs.pass.withExtensions (
-        exts: with exts; [
-          pass-audit
-          # pass-import
-          pass-otp
-          pass-update
-        ]
-      );
-      settings = {
-        PASSWORD_STORE_DIR = "${config.xdg.dataHome}/pass";
-      };
-    };
 
     ssh = {
       enable = true;

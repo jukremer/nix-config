@@ -1,22 +1,25 @@
 {
   homebrew.casks = [
-    "chatgpt"
-    "electrum"
-    "element"
-    "ghostty"
+    "syntax-highlight"
+    "qlmarkdown"
     "iina"
+    "netnewswire"
+    "electrum"
+    "monero-wallet"
     "keepassxc"
+    "element"
+    "signal"
+
+    # Work
+    "zotero"
+    "visual-studio-code"
+    "obsidian"
+    "chatgpt"
+    "ghostty"
+
+    # Games
     "minecraft"
     "modrinth"
-    "monero-wallet"
-    "netnewswire"
-    "nextcloud"
-    "obsidian"
-    "qlmarkdown"
-    "signal"
-    "syntax-highlight"
-    "visual-studio-code"
     "whisky"
-    "zotero"
   ];
 }
