@@ -11,7 +11,6 @@
     "signal"
 
     # Work
-    "zotero"
     "visual-studio-code"
     "obsidian"
     "chatgpt"
