@@ -1,8 +1,6 @@
 { pkgs, ... }:
 {
-  home = {
-    shellAliases."rm" = "trash";
-    packages = with pkgs; [
+  home.packages = with pkgs; [
       darwin.trash
       curl
       cachix
