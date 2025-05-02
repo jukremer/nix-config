@@ -1,24 +1,23 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-      darwin.trash
-      curl
-      cachix
-      hledger
-      hledger-web
-      ffmpeg
-      imagemagick
+    darwin.trash
+    curl
+    cachix
+    hledger
+    hledger-web
+    ffmpeg
+    imagemagick
 
-      # Work
-      typst
-      hayagriva
-      quarto
-      R
-      python3
-      rPackages.reticulate
-      texliveFull
-      plantuml
-      ditaa
-    ];
-  };
+    # Work
+    typst
+    hayagriva
+    quarto
+    R
+    python3
+    rPackages.reticulate
+    texliveFull
+    plantuml
+    ditaa
+  ];
 }
