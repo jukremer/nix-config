@@ -7,7 +7,8 @@
   ];
 
   home.shellAliases = {
-    "deploy" = "ssh -t galanthus 'cd ~/.config/nix; git pull --rebase; sudo nixos-rebuild switch --flake ~/.config/nix'";
+    "deploy" =
+      "ssh -t galanthus 'cd ~/.config/nix; git pull --rebase; sudo nixos-rebuild switch --flake ~/.config/nix'";
     "mv" = "mv -i";
     "rm" = "trash";
     "tree" = "lt";
