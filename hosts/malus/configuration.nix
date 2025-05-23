@@ -62,6 +62,7 @@
   security.pam.services.sudo_local.touchIdAuth = true;
 
   system = {
+    primaryUser = "jan";
     defaults = {
       dock = {
         autohide = true;
