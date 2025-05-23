@@ -11,7 +11,7 @@
     name = "jan";
     home = "/Users/jan";
   };
-  networking.hostName = "malus";
+  networking.hostName = "Mac-von-Jan";
 
   nix = {
     enable = false;

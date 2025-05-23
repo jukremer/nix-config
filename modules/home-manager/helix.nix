@@ -77,7 +77,7 @@
             nixpkgs.expr = "import (builtins.getFlake \"~/.config/nix\").inputs.nixpkgs { }";
             options = {
               nixos.expr = "(builtins.getFlake \"~/.config/nix\").nixosConfigurations.galanthus.options";
-              darwin.expr = "(builtins.getFlake \"~/.config/nix\").darwinConfigurations.malus.options";
+              darwin.expr = "(builtins.getFlake \"~/.config/nix\").darwinConfigurations.mac.options";
               home-manager.expr = "(builtins.getFlake \"~/.config/nix\").homeConfigurations.jan.options";
             };
           };
