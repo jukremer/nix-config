@@ -24,7 +24,7 @@
       ...
     }@inputs:
     {
-      darwinConfigurations.mac = darwin.lib.darwinSystem {
+      darwinConfigurations.Mac-von-Jan = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = {
           inherit inputs;
