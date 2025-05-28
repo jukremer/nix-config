@@ -8,6 +8,8 @@
     hledger-web
     ffmpeg
     imagemagick
+    sapling
+    jujutsu
 
     # Work
     typst
