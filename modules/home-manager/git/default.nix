@@ -49,8 +49,19 @@
       enable = true;
       userName = "Jan Kremer";
       userEmail = "mail@jankremer.eu";
-      extraConfig = {
-        gpg.key = "A7DA689CB3B078EC";
+    };
+
+    jujutsu = {
+      enable = true;
+      settings = {
+        user = {
+          name = "Jan Kremer";
+          email = "mail@jankremer.eu";
+        };
+        signing = {
+          behavior = "own";
+          backend = "gpg";
+        };
       };
     };
   };
