@@ -6,6 +6,7 @@
 }:
 {
   imports = [
+    inputs.agenix.homeManagerModules.default
     ./colors.nix
     ./ghostty.nix
     ./git
@@ -25,6 +26,7 @@
     sessionVariables = {
       DIRENV_LOG_FORMAT = "";
       LEDGER_FILE = "${config.xdg.dataHome}/ledger/2024.journal";
+      OPENAI_API_KEY = "$(cat ${config.age.secrets.openai.path})";
     };
 
     shellAliases = {
@@ -33,6 +35,11 @@
     };
 
     packages = [ inputs.agenix.packages.${pkgs.system}.default ];
+  };
+
+  age = {
+    # identityPaths = [ "~/.ssh/id_ed25519" ];
+    secrets."openai".file = ../secrets/openai.age;
   };
 
   xdg = {

@@ -9,4 +9,5 @@ in
 {
   "nextcloud.age".publicKeys = all;
   "forgejo-runner-token.age".publicKeys = all;
+  "openai.age".publicKeys = all;
 }

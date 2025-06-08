@@ -10,6 +10,7 @@
     imagemagick
 
     # Work
+    codex
     typst
     hayagriva
     quarto
