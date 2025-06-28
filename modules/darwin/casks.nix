@@ -18,6 +18,5 @@
     # Games
     "minecraft"
     "modrinth"
-    "whisky"
   ];
 }
