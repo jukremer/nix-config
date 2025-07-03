@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     darwin.trash
     curl
+    nh
     cachix
     hledger
     hledger-web
