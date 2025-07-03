@@ -1,7 +1,7 @@
 {
   imports = [
     ./bat.nix
-    ./fish.nix
+    # ./fish.nix
     ./starship.nix
     ./zsh.nix
   ];

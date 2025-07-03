@@ -14,11 +14,10 @@
     codex
     typst
     hayagriva
-    quarto
-    R
-    python3
-    rPackages.reticulate
-    texliveFull
+    # quarto
+    # R
+    # rPackages.reticulate
+    # texliveFull
     plantuml
     ditaa
   ];
