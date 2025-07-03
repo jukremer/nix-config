@@ -1,3 +1,5 @@
+Archived: Moved to [Codeberg](https://codeberg.org/kremer/nix-config).
+
 # Floccus
 
 ## Mac setup
